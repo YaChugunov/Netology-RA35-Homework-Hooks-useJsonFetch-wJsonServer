@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "frontend": "http-server && react-scripts start",
+    "frontend": "http-server",
     "backend": "json-server -w db.json",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "build": "webpack --mode production",
     "start": "npm run build && react-scripts start",
-    "dev": "concurrently \"npm run build\" \"npm run backend\" \"npm run client\" \"npm run frontend\""
+    "dev": "concurrently \"npm run backend\" \"npm run client\" \"npm run frontend\""
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -38,11 +38,7 @@
     "webpack-dev-server": "3.2.1"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
