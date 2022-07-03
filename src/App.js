@@ -4,7 +4,7 @@ import './App.css';
 import { useJsonFetch } from './useJsonFetch';
 
 function AppHook1({ url }) {
-  const [data, isLoading, hasError] = useJsonFetch(url);
+  const [data, isLoading, hasError] = useJsonFetch(url, null, null);
   return (
     <div className="App">
       <h2>{url}</h2>
@@ -15,7 +15,7 @@ function AppHook1({ url }) {
   );
 }
 function AppHook2({ url }) {
-  const [data, isLoading, hasError] = useJsonFetch(url);
+  const [data, isLoading, hasError] = useJsonFetch(url, null, null);
   return (
     <div className="App">
       <h2>{url}</h2>
@@ -26,7 +26,7 @@ function AppHook2({ url }) {
   );
 }
 function AppHook3({ url }) {
-  const [data, isLoading, hasError] = useJsonFetch(url);
+  const [data, isLoading, hasError] = useJsonFetch(url, null, null);
   return (
     <div className="App">
       <h2>{url}</h2>

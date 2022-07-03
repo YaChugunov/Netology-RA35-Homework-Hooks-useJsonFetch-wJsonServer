@@ -18,6 +18,7 @@ export const useJsonFetch = ({ url, init, processData }) => {
 
   useEffect(() => {
     const fetchProcess = async () => {
+      console.log(url);
       setLoading(true);
       try {
         // Fetch data from REST API
